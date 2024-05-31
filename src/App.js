@@ -6,6 +6,7 @@ import Home from "./pages/Home.js"
 import DashboardPage from './pages/Dasboard.js'
 import Login from './pages/Login.js';
 import ProtectedRoute from './componnents/ProtectedRoute.js';
+import Other from './pages/Other.js';
 const App = () => {
   const [isAuth, setAuth] = useState(false);
 
@@ -21,8 +22,9 @@ const App = () => {
             </ProtectedRoute>
           }
         >
-          <Route index element={<Home />} />
+          {/* <Route index element={<Home />} /> */}
           <Route path="dashboard" element={<DashboardPage />} />
+          <Route path ="other" element={<Other/>}/>
         </Route>
       </Routes>
     </Router>

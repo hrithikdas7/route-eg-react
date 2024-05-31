@@ -12,7 +12,7 @@ const Login = ({ setAuth }) => {
     // Perform login logic here
     if (username === 'admin' && password === 'password') {
       setAuth(true);
-      navigate('/');
+      navigate('/dashboard');
     } else {
       alert('Invalid credentials');
     }
